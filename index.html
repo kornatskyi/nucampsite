@@ -30,7 +30,8 @@
           <h2>a better way to camp</h2>
         </div>
         <div class="col-md-4 col-xl-2 d-flex justify-content-end align-items-center">
-          <a href="#reserveForm" role="button" class="btn btn-lg btn-info"  data-toggle="modal" data-target="#reserveModal " >Reserve Campsite</a>
+          <a href="#reserveForm" role="button" class="btn btn-lg btn-info" data-toggle="modal"
+            data-target="#reserveModal ">Reserve Campsite</a>
         </div>
       </div>
     </div>
@@ -75,7 +76,7 @@
                 <label class="col-sm-6 col-form-label">Campsite Type</label>
                 <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
                   <label class="btn bg-success btn-secondary active">
-                    <input  type="radio" name="siteType" id="siteTent" autocomplete="off" checked> Tent
+                    <input type="radio" name="siteType" id="siteTent" autocomplete="off" checked> Tent
                   </label>
                   <label class="btn btn-secondary bg-primary">
                     <input type="radio" name="siteType" id="siteRV" autocomplete="off"> RV
@@ -84,13 +85,13 @@
               </div>
               <div class="form-group row">
                 <div class="col">
-                  <button class="btn btn-secondary" data-dismiss="modal" >Cancel</button>
+                  <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                   <button class=" btn btn-primary" type="submit">
                     Search
                   </button>
                 </div>
               </div>
-            
+
             </form>
           </div>
         </div>
@@ -98,7 +99,7 @@
     </div>
   </div>
 
-  
+
 
   <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
     <div class="container">
@@ -137,7 +138,7 @@
               <div class="form-row">
                 <div class="form-group col-12">
                   <label class="sr-only" for="loginEmail">Email address</label>
-                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                  <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
                 </div>
                 <div class="form-group col-12">
                   <label class="sr-only" for="loginPassword">Password</label>
@@ -173,31 +174,33 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="img/breadcrumb-trail.jpg" alt="Breadcrumb Trail Campground"  class="d-block w-100" >
+              <img src="img/breadcrumb-trail.jpg" alt="Breadcrumb Trail Campground" class="d-block w-100">
               <div class="carousel-caption">
-                  <h3>Creadcrumb Trail Campground</h3>
-                  <p class="d-none d-sm-block">
-                    Let Nucamp be your guide to this off-the-beaten-path, hike-in-only campground.
-                  </p>
+                <h3>Creadcrumb Trail Campground</h3>
+                <p class="d-none d-sm-block">
+                  Let Nucamp be your guide to this off-the-beaten-path, hike-in-only campground.
+                </p>
               </div>
             </div>
             <div class="carousel-item ">
-              <img src="img/react-lake.jpg" alt="React Lake Campground"  class="d-block w-100" >
+              <img src="img/react-lake.jpg" alt="React Lake Campground" class="d-block w-100">
               <div class="carousel-caption">
                 <h3>React Lake Campground</h3>
                 <p class="d-none d-sm-block">
-                  Nestled in the foothills of the Chrome Mountains, this campground on the shores on the pristine React Lake is a favorite for fly fishers.
+                  Nestled in the foothills of the Chrome Mountains, this campground on the shores on the pristine React
+                  Lake is a favorite for fly fishers.
                 </p>
-            </div>
+              </div>
             </div>
             <div class="carousel-item ">
-              <img src="img/chrome-river.jpg" alt="Chrome River Campground"  class="d-block w-100" >
+              <img src="img/chrome-river.jpg" alt="Chrome River Campground" class="d-block w-100">
               <div class="carousel-caption">
                 <h3>Chrome River Campground</h3>
                 <p class="d-none d-sm-block">
-                  Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome River.
+                  Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot
+                  by the Chrome River.
                 </p>
-            </div>
+              </div>
             </div>
           </div>
           <a href="#homeCarousel" class="carousel-control-prev" role="button" data-slide="prev">
@@ -208,9 +211,9 @@
             <span class="carousel-control-next-icon"></span>
             <span class="sr-only">Next</span>
           </a>
-            <button class="btn btn-danger btn-sm" id="carouselButton">
-              <i class="fa fa-pause"></i>
-            </button>
+          <button class="btn btn-danger btn-sm" id="carouselButton">
+            <i class="fa fa-pause"></i>
+          </button>
 
 
         </div>
@@ -323,7 +326,7 @@
     </div>
 
   </div> -->
- 
+
   <footer class="site-footer">
     <div class="container">
       <div class="row">
@@ -357,26 +360,7 @@
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script>
-
-            $(function() {
-            $(".carousel").carousel( { interval: 1 } );
-            $("#carouselButton").click(function(){
-              if($("#carouselButton").children("i").hasClass("fa-pause")) {
-                $(".carousel").carousel("pause");
-                $("#carouselButton").children("i").removeClass("fa-pause");
-                $("#carouselButton").children("i").addClass("fa-play");
-
-              } else {
-                $(".carousel").carousel("cycle");
-                $("#carouselButton").children("i").removeClass("fa-play");
-                $("#carouselButton").children("i").addClass("fa-pause");
-              }
-                
-            });
-
-        });
-  </script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
